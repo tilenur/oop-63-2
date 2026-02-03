@@ -1,0 +1,24 @@
+Команды для регистрации ваших
+write 1 time for the computer
+git config --global user.name "tilenur"
+git config --global user.email "tilenur@gmail.com"
+========================================================================
+write 1 time for the project
+git init
+git remote add origin https://github.com/tilenur/oop-63-2.git
+========================================================================
+Основные команды для работы с GIT
+
+git status
+
+need to create file .gitignore
+
+git add .
+
+git add \file name or directory
+git add lessons/lesson2Teacher.py (tab - auto add)
+git add lessons/ (all folder)
+
+git rm -r .name or directory
+
+===========================================================
