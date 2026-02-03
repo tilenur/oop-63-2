@@ -16,6 +16,11 @@ need to create file .gitignore
 git add .
 
 git commit -m "_______"
-git push origin master
+
+git branch                  -- to check which branch
+
+
+git push origin master      -- Windows
+git push origin main        -- Mac
 
 ===========================================================
