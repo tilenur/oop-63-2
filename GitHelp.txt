@@ -15,10 +15,7 @@ need to create file .gitignore
 
 git add .
 
-git add \file name or directory
-git add lessons/lesson2Teacher.py (tab - auto add)
-git add lessons/ (all folder)
-
-git rm -r .name or directory
+git commit -m "_______"
+git push origin master
 
 ===========================================================
