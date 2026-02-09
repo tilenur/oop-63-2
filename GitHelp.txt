@@ -15,6 +15,12 @@ need to create file .gitignore
 
 git add .
 
+git add \file name or directory
+git add lessons/lesson2Teacher.py (tab - auto add)
+git add lessons/ (all folder)
+
+git rm -r .name or directory
+
 git commit -m "_______"
 
 git branch                  -- to check which branch
@@ -32,3 +38,16 @@ git merge (branch name)
 
 git switch (branch name)     - for switching branches
 git checkout (branch name)
+
+git switch -c (branch name)  - for creating branch and switching it to it
+git checkout -b (branch name)
+
+
+////////////////////////////////////////////////////////////////
+
+git restore __file__/__place__     - restores state to the last commit
+git restore .                      - restores all files
+git reset .                        - restores to previous state after add . (buffer obmena)
+
+git reset --mixed HEAD~1           - delete last commit
+git restore .                      - restores all files at that moment
