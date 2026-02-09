@@ -24,3 +24,11 @@ git push origin master      -- Windows
 git push origin main        -- Mac
 
 ===========================================================
+
+git branch - see branch
+git branch (name of the branch)     -- for creating branch
+
+git merge (branch name)
+
+git switch (branch name)     - for switching branches
+git checkout (branch name)
