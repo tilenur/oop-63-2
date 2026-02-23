@@ -73,16 +73,33 @@
 
 
 
-def repeat_decorator(n):
-    def decorator(func):
-        def wrapper():
-            for i in range(n):
-                func()
-        return wrapper
-    return decorator
+# def repeat_decorator(n):
+#     def decorator(func):
+#         def wrapper():
+#             for i in range(n):
+#                 func()
+#         return wrapper
+#     return decorator
+#
+# @repeat_decorator(5)
+# def say_hello():
+#     print('Hello World!')
+#
+# say_hello()
 
-@repeat_decorator(5)
-def say_hello():
-    print('Hello World!')
+def class_decorator(cls):
+    class NewCLass(cls):
+        def method(self):
+            print("New method!")
+    return NewCLass
 
-say_hello()
+@class_decorator
+class OldCLass:
+    def method(self):
+        print("Old method!")
+
+obj_1 = OldCLass()
+
+obj_1.method()
+
+print(type(obj_1))
