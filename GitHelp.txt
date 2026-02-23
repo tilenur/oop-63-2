@@ -71,3 +71,4 @@ git reset .                        - restores to previous state after add . (buf
 
 git reset --mixed HEAD~1           - delete last commit
 git restore .                      - restores all files at that moment
+
