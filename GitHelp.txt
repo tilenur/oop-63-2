@@ -19,20 +19,20 @@ git add \file name or directory
 git add lessons/lesson2Teacher.py (tab - auto add)
 git add lessons/ (all folder)
 
+git rm -r .name or directory
+
 git commit -m "_______"
 
-git branch                          -- to check which branch
-git branch (name of the branch)     -- to make new branch
+git branch                  -- to check which branch
+
 
 git push origin master      -- Windows
 git push origin main        -- Mac
 
-git rm -r .name or directory
-
 ===========================================================
 
-git branch                           -- see branch
-git branch (name of the branch)      -- to make new branch
+git branch - see branch
+git branch (name of the branch)     -- for creating branch
 
 git merge (branch name)
 
@@ -61,3 +61,13 @@ git commit -m "fix: _____"
 git commit -m "hotfix: _____"
 
 git push origin (name of the branch)
+
+
+////////////////////////////////////////////////////////////////
+
+git restore __file__/__place__     - restores state to the last commit
+git restore .                      - restores all files
+git reset .                        - restores to previous state after add . (buffer obmena)
+
+git reset --mixed HEAD~1           - delete last commit
+git restore .                      - restores all files at that moment
