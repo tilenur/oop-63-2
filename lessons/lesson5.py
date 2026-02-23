@@ -1,0 +1,88 @@
+# class User:
+#
+#     def __init__(self, first_name, last_name, balance, bonus):
+#         self.first_name = first_name
+#         self.last_name = last_name
+#         self._balance = balance
+#         self.bonus = bonus
+#
+#     def get_balance(self):
+#         return self.balance
+#
+#     @property
+#     def full_name(self):
+#         return self.first_name + ' ' + self.last_name
+#
+#     @property
+#     def total_balance(self):
+#         return self._balance + self.bonus
+#
+#     @property
+#     def user_balance(self):
+#         return self._balance
+#
+#     @user_balance.setter
+#     def user_balance(self, value):
+#         if value < 0:
+#             return print("error!!")
+#         self._balance = value
+#
+#
+# ardager = User("Ardager", "Kartanbekov", 100, 50)
+#
+# print(ardager.first_name)
+# # print(ardager.get_balance())
+# print(ardager.user_balance)
+#
+# ardager.user_balance = 200
+# print(ardager.user_balance)
+#
+# # print(ardager.full_name()) --- this is calling a method
+#
+# # @property ----- property method - turns method into an attribute - accessed without ()
+# # print(ardager.full_name)
+# # print(ardager.total_balance)
+#
+#
+#
+# def simple_decorator(func):
+#     def wrapper():
+#         print("before completion!!")
+#         func()
+#         print("after completion!!")
+#     return wrapper
+#
+# @simple_decorator
+# def say_hello():
+#     print("Hello World!")
+#
+# say_hello()
+#
+# def how(func):
+#     def wrapper(name):
+#         func(name)
+#         print("How are you?")
+#     return wrapper
+#
+#
+# @how
+# def greeting(name):
+#     print(f"{name} hello!")
+#
+# greeting("Ardager")
+
+
+
+def repeat_decorator(n):
+    def decorator(func):
+        def wrapper():
+            for i in range(n):
+                func()
+        return wrapper
+    return decorator
+
+@repeat_decorator(5)
+def say_hello():
+    print('Hello World!')
+
+say_hello()

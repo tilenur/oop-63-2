@@ -15,12 +15,49 @@ need to create file .gitignore
 
 git add .
 
+git add \file name or directory
+git add lessons/lesson2Teacher.py (tab - auto add)
+git add lessons/ (all folder)
+
 git commit -m "_______"
 
-git branch                  -- to check which branch
-
+git branch                          -- to check which branch
+git branch (name of the branch)     -- to make new branch
 
 git push origin master      -- Windows
 git push origin main        -- Mac
 
+git rm -r .name or directory
+
 ===========================================================
+
+git branch                           -- see branch
+git branch (name of the branch)      -- to make new branch
+
+git merge (branch name)
+
+git switch (branch name)     - for switching branches
+git checkout (branch name)
+
+git switch -c (branch name)  - for creating branch and switching it to it
+git checkout -b (branch name)
+
+Branches:
+1. prod
+- release
+2. test
+3. stage|dev|test
+4. dev
+
+Branches names:
+- feat/login
+- feat/register
+- feat/comment
+
+Commit names:
+git commit -m "feat: _____"
+git commit -m "update: _____"
+git commit -m "fix: _____"
+git commit -m "hotfix: _____"
+
+git push origin (name of the branch)
